@@ -3053,7 +3053,7 @@
 			// session.view // "xxxx" ; the stream ID or a list of Stream IDs to Connect to. Not the same as &noaudio/&novideo. Set to "" (empty) if you don't wish to connect to any.
 			// session.remote // See docs, but allows for remote stats monitoring and remote focus/zoom control
 			// session.optimize  // Whether to optimize invisible scenes in OBS. See docs.vdo.ninja. Setting to 0 will pause the video/audio when not visible in OBS
-			// session.disableOBS // If true, will disable any OBS-specific events/functions.
+			session.disableOBS // If true, will disable any OBS-specific events/functions.
 			// session.noaudio // False by default, otherwise specify a list [] of stream IDs to allow. Listing none allows no incoming audio streams
 			// session.novideo // False by default, otherwise specify a list [] of stream IDs to allow. Listing none allows no incoming video streams
 			// session.forceios // If true, will allow iOS devices to send H264 video to other guests in a room
@@ -3086,8 +3086,8 @@
 			// session.record = false; // uncomment to block users from being able to record via vdo.ninja's built in recording function
 			// session.whipServerURL = "wss://whip.vdo.ninja"; // If you deploy your own whip websocket service
 			// session.mediamtx = "youdomain.com:443"; // Your hosted MediaMTX SFU domain. Assumes HTTPS-enabled.
-			// session.GDRIVE_CLIENT_ID = "624877431974-o8d1dcrvti4jn7m5b6tfmp71fteov05a.apps.googleusercontent.com"; // get your own id/key from Google Cloud
-			// session.GDRIVE_API_KEY = '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'; // lets you upload to google drive if self hosting.
+			session.GDRIVE_CLIENT_ID = "624877431974-o8d1dcrvti4jn7m5b6tfmp71fteov05a.apps.googleusercontent.com"; // get your own id/key from Google Cloud
+			session.GDRIVE_API_KEY = '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'; // lets you upload to google drive if self hosting.
 			// session.decrypted = session.decodeInvite("U2FsdGVkX1+d58DFIHoO3EQZSuX86ch4PqW2ouztnJ0="); // get a code from invite.cam
 			session.hidehome = true;
 			// if ("42" != prompt("enter the password")){document.body.innerHTML = "";window.location.href = "";} // if you want a low-effort password for the site
